@@ -11,16 +11,24 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 
-    <!-- Convert this to an external style sheet -->
+    <!-- Font ref links-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Racing+Sans+One&family=Roboto&display=swap"
+        rel="stylesheet">
 
+    <!-- Convert this to an external style sheet -->
     <link href="css/site.css" rel="stylesheet">
 </head>
 
 <body>
     <!--Nav Bar-->
-    <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-md fixed-top">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Rocket Motivation</a>
+            <div>
+                <img src="/img/RocketLogo.png" height="50" class="px-1">
+            </div>
+            <a class="navbar-brand navbarFontColor" href="/index.html">Rocket Motivation</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
                 aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -28,22 +36,48 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav me-auto mb-2 mb-md-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link navbarFontColor active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navbarFontColor" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navbarFontColor" href="#">About</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
+
+    <!-- Header -->
+    <header class="header mt-2">
+        <div class="container-fluid d-flex justify-content-start align-items-center mt-5 px-5 h-100">
+            <div>
+                <div class="title">NEVER GIVE UP</div>
+                <div class="title">ON YOUR DREAMS</div>
+                <div class="subtitle">LEARN TO CODE AND START A NEW CAREER!</div>
+                <button class="btn btn-warning mt-3">START TODAY!</button>
+            </div>
+        </div>
+        </div>
+
+
+
+    </header>
+
     <!--Main Content Section-->
     <main class="content pt-5">
         <div class="container">
-
+            
         </div>
     </main>
+
+
+
     <!--Footer Section-->
     <footer class="footer">
-        <div class="container-fluid py-3">
-            <span class="text-muted">Rocket Motivation</span>
+        <div class="container-fluid py-3 text-center">
+            <span class="text-muted">&copy 2022 Rocket Motivation</span>
         </div>
     </footer>
     <!-- Bootstrap JS -->
