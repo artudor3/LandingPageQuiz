@@ -18,28 +18,30 @@ body {
     font-family: var(--body-font);
     display: flex;
     flex-direction: column;
-    background-image: url("/img/LandingPage_Portrait.png");
+    background-image: url("/img/LandingPage_PortraitXS.png");
     background-color: var(--at-darkblue);
     background-position: top center;
     background-repeat: no-repeat;
 }
 
 .header {
-    height: 1000px;
+    height: 100%;
 }
 
 .title {
     font-family: var(--title-font);
-    font-size: 5rem;
-    line-height: 4rem;
+    font-size: 1.8rem;
+    line-height: 1.7rem;
     color: var(--at-light);
 }
 
 .subtitle {
-    font-family: var(--subtitle-font);
-    font-size: 1.95rem;
+    font-family: var(--sub-title-font);
+    font-weight: 100;
+    font-size: .7rem;
     color: var(--at-light);
-    line-height: 2.5rem;
+    line-height: 1.2rem;
+    letter-spacing: .1rem;
 }
 
 .content {
@@ -59,6 +61,17 @@ body {
 /* extra small devices (landscape phones 375 and up) */
 @media (min-width: 374.98px) {
     body{
+        background-image: url("/img/LandingPage_Portrait2.png");
+    }
+    .title {
+        font-size: 2.4rem;
+        line-height: 2rem;
+    }
+
+    .subtitle {
+        font-weight: 100;
+        font-size: .94rem;
+        line-height: 1.2rem;
     }
 }
 
@@ -66,13 +79,22 @@ body {
 @media (min-width: 575.98px) {
     body {
         background-image: url("/img/LandingPage_768.png");
+        background-position: top right;
     }
 }
 
 /* medium devices (landscape phones 768px and up) */
 @media (min-width: 767.98px) {
     body {
-        background-image: url("/img/LandingPage_992.png");
+        background-image: url("/img/LandingPage_1200.png");
+    }
+    .title {
+        font-size: 4rem;
+        line-height: 3rem;
+    }
+    .subtitle {
+        font-size: 1.57rem;
+        line-height: 2rem;
     }
 }
 
@@ -81,12 +103,37 @@ body {
     body {
         background-image: url("/img/LandingPage_1200.png");
     }
+    .title {
+        font-size: 5rem;
+        line-height: 4rem;
+    }
+    .subtitle {
+        font-size: 1.95rem;
+        line-height: 2.5rem;
+    }
 }
 
 /* extra large devices (landscape phones 1200px and up) */
 @media (min-width: 1199.98px) {
-    background-image: url("/img/LandingPage_1920.png");
+    body {
+        background-image: url("/img/LandingPage_1400.png");
+    }
 }
 
 /* extra extra large devices (landscape phones px and up) */
-@media (min-width: 1199.98px) {}
+@media (min-width: 1399.98px) {
+    body {
+        background-image: url("/img/LandingPage_1920.png");
+    }
+
+    .title {
+        font-size: 6rem;
+        line-height: 4.6rem;
+    }
+
+    .subtitle {
+        font-size: 2.35rem;
+        line-height: 2.7rem;
+        
+    }
+}
